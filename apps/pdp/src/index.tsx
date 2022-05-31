@@ -1,5 +1,4 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { App } from './App'
+import { hydrateRoot } from "react-dom/client";
+import App from "./App";
 
-ReactDOM.hydrate(<App />, document.getElementById('root'))
+hydrateRoot(document, <App assets={(window as any).assetManifest} />);

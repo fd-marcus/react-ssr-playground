@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
   name: 'server',
   entry: {
-    server: path.resolve(__dirname, '../server/server.ts'),
+    server: path.resolve(__dirname, '../server/server.tsx'),
   },
   mode: 'production',
   output: {
